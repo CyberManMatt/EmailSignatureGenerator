@@ -31,10 +31,10 @@
         <div class="wrapper wrapper--w960">
             <div class="card card-2">
                 <div class="card-heading"></div>
-                <div class="card-body"><!-- body block should start here -->
-                    <h2 class="title">Email Signature Generator</h2><!-- There should be a title block here -->
+                <div class="card-body">
+                {% block body %}
+                    <h2 class="title">{% block title %}Email Signature Generator{% endblock %}</h2><!-- There should be a title block here -->
                     <form method="POST">
-                        {% block body %}
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="Email Address" name="email">
                         </div>
@@ -59,16 +59,14 @@
                         <div class="p-t-30">
                             <button class="btn btn--radius btn--green" type="submit">Generate Signature</button>
                         </div>
-                        {% endblock %}
                         </div>
                     </form>
-                    <div id="github"><!-- Delete this div -->
-                        <a href="https://github.com/CyberManMatt/EmailSignatureGenerator"><img src="static/images/GitHub-Mark-32px.png"></a><!-- Move this to the div section with the h3 tag -->
-                    </div>
-                </div><!-- body block should end here -->
+                    {% endblock %}
+                </div>
             </div>
-            <div><!-- Create an ID and tag for styling in CSS -->
-                <h3>This template was made by FantacyDesigns <a href="https://fantacydesignss.com">(https://fantacydesignss.com)</a></h3><!-- Remove the extra 's' in fantacydesignss.com -->
+            <div id='off-card'>
+                <h3>This template was made by FantacyDesigns <a href="https://fantacydesigns.com">(https://fantacydesigns.com)</a></h3>
+                <a href="https://github.com/CyberManMatt/EmailSignatureGenerator"><img src="static/images/GitHub-Mark-32px.png"></a>
             </div>
         </div>
     </div>
