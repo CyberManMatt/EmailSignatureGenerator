@@ -31,8 +31,8 @@
         <div class="wrapper wrapper--w960">
             <div class="card card-2">
                 <div class="card-heading"></div>
-                <div class="card-body">
-                    <h2 class="title">Email Signature Generator</h2>
+                <div class="card-body"><!-- body block should start here -->
+                    <h2 class="title">Email Signature Generator</h2><!-- There should be a title block here -->
                     <form method="POST">
                         {% block body %}
                         <div class="input-group">
@@ -62,9 +62,13 @@
                         {% endblock %}
                         </div>
                     </form>
-                    <div id="github">
-                        <a href="https://github.com/CyberManMatt/EmailSignatureGenerator"><img src="static/images/GitHub-Mark-32px.png"></a>
-                </div>
+                    <div id="github"><!-- Delete this div -->
+                        <a href="https://github.com/CyberManMatt/EmailSignatureGenerator"><img src="static/images/GitHub-Mark-32px.png"></a><!-- Move this to the div section with the h3 tag -->
+                    </div>
+                </div><!-- body block should end here -->
+            </div>
+            <div><!-- Create an ID and tag for styling in CSS -->
+                <h3>This template was made by FantacyDesigns <a href="https://fantacydesignss.com">(https://fantacydesignss.com)</a></h3><!-- Remove the extra 's' in fantacydesignss.com -->
             </div>
         </div>
     </div>
@@ -79,7 +83,7 @@
     <!-- Main JS-->
     <script src="static/js/global.js"></script>
 
-</body><!-- This templates was made by FantacyDesigns (https://fantacydesignss.com) -->
+</body><!-- This templates was made by FantacyDesigns (https://fantacydesigns.com) -->
 
 </html>
 <!-- end -->

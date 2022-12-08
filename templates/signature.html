@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
-{{ signature|safe }}
+{{ signature|safe }}<!-- Wrap this in a div with a tag of "signature" -->
 <span><button onclick="copy()" id="clipboard">Copy Signature To Clipboard</button></span>
 
 <script>
     function copy() {
         /* Save value of myText to input variable */
+        /* Change the tag name to "signature" */
         var input = document.getElementsByTagName("form")[0].innerHTML;
        
          /* Copy the text inside the text field */
