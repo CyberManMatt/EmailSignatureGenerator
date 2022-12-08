@@ -15,4 +15,4 @@ COPY . /usr/src/app
 
 EXPOSE 8000
 
-CMD flask --app main run
+ENTRYPOINT ["/usr/src/app/gunicorn.sh"]

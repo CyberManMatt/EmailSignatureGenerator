@@ -18,14 +18,6 @@ You are able to copy the signature to your system's clipboard and paste it direc
 ![clipbooard](https://user-images.githubusercontent.com/108106370/187037962-11f38bcd-9f89-446e-be61-29d81ad07066.gif)
 
 
-### When will this be available?
+# ATTENTION!!!
 
-I am still integrating databases to get the data to generate the email signatures.
-
-### How can I download it when it's available?
-
-When this service is available, it will be accessed using your web browser. No downloading needed.
-
-
-
-Front-end design from FantacyDesigns https://fantacydesigns.com/
+This is still in development. This is just the test product.

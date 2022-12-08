@@ -3,3 +3,4 @@ database.py
 test.db
 .venv/
 __pycache__/
+gunicorn.sh

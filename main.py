@@ -101,7 +101,3 @@ def home():
         pronouns = request.args.get('pronouns')
 
         return render_template('index.html')
-
-
-
-app.run(debug=True)
